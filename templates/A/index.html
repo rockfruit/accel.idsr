@@ -1,0 +1,22 @@
+<!--
+This creates a nested wizard using 1.html, 2.html, etc for each section.
+
+Read documentation at https://github.com/rstaib/jquery-steps/wiki/Settings
+-->
+
+<script type="text/javascript">
+    (function($) {
+        $(document).ready(function() {
+            $("#A").steps({
+                headerTag: "h2",
+                transitionEffect: "slideLeft",
+                autoFocus: true
+            });
+        })
+    })(jQuery);
+</script>
+
+<div id="A">
+    {% include "A/1.html" %}
+    {% include "A/2.html" %}
+</div>

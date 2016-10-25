@@ -1,0 +1,382 @@
+﻿/*
+    Common 
+*/
+
+.wizard-inner,
+.tabcontrol
+{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wizard-inner a,
+.tabcontrol a
+{
+    outline: 0;
+}
+
+.wizard-inner ul,
+.tabcontrol ul
+{
+    list-style: none !important;
+    padding: 0;
+    margin: 0;
+}
+
+.wizard-inner ul > li,
+.tabcontrol ul > li
+{
+    display: block;
+    padding: 0;
+}
+
+/* Accessibility */
+.wizard-inner > .steps .current-info,
+.tabcontrol > .steps .current-info
+{
+    position: absolute;
+    left: -999em;
+}
+
+.wizard-inner > .content > .title,
+.tabcontrol > .content > .title
+{
+    position: absolute;
+    left: -999em;
+}
+
+
+
+/*
+    Wizard
+*/
+
+.wizard-inner > .steps
+{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.wizard-inner.vertical > .steps
+{
+    display: inline;
+    float: left;
+    width: 30%;
+}
+
+.wizard-inner > .steps .number
+{
+    font-size: 1.429em;
+}
+
+.wizard-inner > .steps > ul > li
+{
+    width: 25%;
+}
+
+.wizard-inner > .steps > ul > li,
+.wizard-inner > .actions > ul > li
+{
+    float: left;
+}
+
+.wizard-inner.vertical > .steps > ul > li
+{
+    float: none;
+    width: 100%;
+}
+
+.wizard-inner > .steps a,
+.wizard-inner > .steps a:hover,
+.wizard-inner > .steps a:active
+{
+    display: block;
+    width: auto;
+    margin: 0 0.5em 0.5em;
+    padding: 1em 1em;
+    text-decoration: none;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.wizard-inner > .steps .disabled a,
+.wizard-inner > .steps .disabled a:hover,
+.wizard-inner > .steps .disabled a:active
+{
+    background: #eee;
+    color: #aaa;
+    cursor: default;
+}
+
+.wizard-inner > .steps .current a,
+.wizard-inner > .steps .current a:hover,
+.wizard-inner > .steps .current a:active
+{
+    background: #2184be;
+    color: #fff;
+    cursor: default;
+}
+
+.wizard-inner > .steps .done a,
+.wizard-inner > .steps .done a:hover,
+.wizard-inner > .steps .done a:active
+{
+    background: #9dc8e2;
+    color: #fff;
+}
+
+.wizard-inner > .steps .error a,
+.wizard-inner > .steps .error a:hover,
+.wizard-inner > .steps .error a:active
+{
+    background: #ff3111;
+    color: #fff;
+}
+
+.wizard-inner > .content
+{
+    background: #eee;
+    display: block;
+    margin: 0.5em;
+    min-height: 35em;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.wizard-inner.vertical > .content
+{
+    display: inline;
+    float: left;
+    margin: 0 2.5% 0.5em 2.5%;
+    width: 65%;
+}
+
+.wizard-inner > .content > .body
+{
+    float: left;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.wizard-inner > .content > .body ul
+{
+    list-style: disc !important;
+}
+
+.wizard-inner > .content > .body ul > li
+{
+    display: list-item;
+}
+
+.wizard-inner > .content > .body > iframe
+{
+    border: 0 none;
+    width: 100%;
+    height: 100%;
+}
+
+.wizard-inner > .content > .body input
+{
+    display: block;
+    border: 1px solid #ccc;
+}
+
+.wizard-inner > .content > .body input[type="checkbox"]
+{
+    display: inline-block;
+}
+
+.wizard-inner > .content > .body input.error
+{
+    background: rgb(251, 227, 228);
+    border: 1px solid #fbc2c4;
+    color: #8a1f11;
+}
+
+.wizard-inner > .content > .body label
+{
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
+.wizard-inner > .content > .body label.error
+{
+    color: #8a1f11;
+    display: inline-block;
+    margin-left: 1.5em;
+}
+
+.wizard-inner > .actions
+{
+    position: relative;
+    display: block;
+    text-align: right;
+    width: 100%;
+}
+
+.wizard-inner.vertical > .actions
+{
+    display: inline;
+    float: right;
+    margin: 0 2.5%;
+    width: 95%;
+}
+
+.wizard-inner > .actions > ul
+{
+    display: inline-block;
+    text-align: right;
+}
+
+.wizard-inner > .actions > ul > li
+{
+    margin: 0 0.5em;
+}
+
+.wizard-inner.vertical > .actions > ul > li
+{
+    margin: 0 0 0 1em;
+}
+
+.wizard-inner > .actions a,
+.wizard-inner > .actions a:hover,
+.wizard-inner > .actions a:active
+{
+    background: #2184be;
+    color: #fff;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.wizard-inner > .actions .disabled a,
+.wizard-inner > .actions .disabled a:hover,
+.wizard-inner > .actions .disabled a:active
+{
+    background: #eee;
+    color: #aaa;
+}
+
+.wizard-inner > .loading
+{
+}
+
+.wizard-inner > .loading .spinner
+{
+}
+
+
+
+/*
+    Tabcontrol
+*/
+
+.tabcontrol > .steps
+{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.tabcontrol > .steps > ul
+{
+    position: relative;
+    margin: 6px 0 0 0;
+    top: 1px;
+    z-index: 1;
+}
+
+.tabcontrol > .steps > ul > li
+{
+    float: left;
+    margin: 5px 2px 0 0;
+    padding: 1px;
+
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tabcontrol > .steps > ul > li:hover
+{
+    background: #edecec;
+    border: 1px solid #bbb;
+    padding: 0;
+}
+
+.tabcontrol > .steps > ul > li.current
+{
+    background: #fff;
+    border: 1px solid #bbb;
+    border-bottom: 0 none;
+    padding: 0 0 1px 0;
+    margin-top: 0;
+}
+
+.tabcontrol > .steps > ul > li > a
+{
+    color: #5f5f5f;
+    display: inline-block;
+    border: 0 none;
+    margin: 0;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.tabcontrol > .steps > ul > li > a:hover
+{
+    text-decoration: none;
+}
+
+.tabcontrol > .steps > ul > li.current > a
+{
+    padding: 15px 30px 10px 30px;
+}
+
+.tabcontrol > .content
+{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 35em;
+    overflow: hidden;
+    border-top: 1px solid #bbb;
+    padding-top: 20px;
+}
+
+.tabcontrol > .content > .body
+{
+    float: left;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.tabcontrol > .content > .body ul
+{
+    list-style: disc !important;
+}
+
+.tabcontrol > .content > .body ul > li
+{
+    display: list-item;
+}
