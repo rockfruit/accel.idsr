@@ -6,25 +6,19 @@
             headerTag: "h1",
             bodyTag: "main_section",
             cssClass: "wizard",
-            transitionEffect: "slideLeft",
-            autoFocus: true,
-            enableAllSteps: true
+            transitionEffect: "slideLeft"
         });
         $("#A").steps({
             headerTag: "h2",
-            bodyTag: "a_section",
+            bodyTag: "div",
             cssClass: "wizard",
-            transitionEffect: "slideLeft",
-            autoFocus: true,
-            enableAllSteps: true
+            transitionEffect: "slideLeft"
         });
         $("#B").steps({
             headerTag: "h2",
             bodyTag: "div",
             cssClass: "wizard",
-            transitionEffect: "slideLeft",
-            autoFocus: true,
-            enableAllSteps: true
+            transitionEffect: "slideLeft"
         });
     })
 })(jQuery);
