@@ -1,0 +1,18 @@
+
+.table {
+  display:table;
+}
+
+.tr {
+  display:table-row;
+}
+
+.th {
+  display:table-cell;
+}
+
+.td {
+  display:table-cell;
+}
+
+
