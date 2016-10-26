@@ -11,22 +11,11 @@
     <!-- JQuery-Steps things -->
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.steps.min.js') }}"></script>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.steps.css') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.steps-inner.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}"/>
 
-    <!-- This contains our configuration of nested step wizard -->
-    <!-- Read documentation at https://github.com/rstaib/jquery-steps/wiki/Settings -->
-    <script type="text/javascript">
-    (function($) {
-        $(document).ready(function() {
-            $("#main-step-form").steps({
-                transitionEffect: "slideLeft",
-                autoFocus: true
-            });
-        })
-    })(jQuery);
-    </script>
+    <!-- This contains the configuration of the entire steps-form -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/idsr-minimal-steps.js') }}"></script>
 
 </head>
 
@@ -36,14 +25,14 @@
 <div id="main-step-form">
 
     <h1>Section A</h1>
-    <div>
+    <main_section>
         {% include "A/index.html" %}
-    </div>
+    </main_section>
 
     <h1>Section B</h1>
-    <div>
+    <main_section>
         {% include "B/index.html" %}
-    </div>
+    </main_section>
 
 </div>
 

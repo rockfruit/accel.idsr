@@ -1,23 +1,8 @@
 <!--
-This creates a nested wizard using 1.html, 2.html, etc for each section.
-
-Read documentation at https://github.com/rstaib/jquery-steps/wiki/Settings
+This creates the structure needed to render the subsections.
 -->
-
-<script type="text/javascript">
-    (function($) {
-        $(document).ready(function() {
-            $("#B").steps({
-                headerTag: "h2",
-                transitionEffect: "slideLeft",
-                autoFocus: true
-            });
-        })
-    })(jQuery);
-</script>
 
 <div id="B">
     {% include "B/1.html" %}
     {% include "B/2.html" %}
 </div>
-
