@@ -1,5 +1,4 @@
-<!-- This contains our configuration of nested step wizard -->
-<!-- Read documentation at https://github.com/rstaib/jquery-steps/wiki/Settings -->
+
 (function($) {
     $(document).ready(function() {
         $("#application").steps({
@@ -30,9 +29,16 @@
             transitionEffect: "slideLeft",
             enableAllSteps: true
         });
+        
+        $("input#other_disease").hide();
+        $("input#other").click(function () {
+            $("input#other_disease").show();
+        });
+        countiesList();
+        
+        
     })
 })(jQuery);
-
 
 /* read https://github.com/rstaib/jquery-steps/issues/23
 

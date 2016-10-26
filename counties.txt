@@ -1,0 +1,73 @@
+Bomi
+Bong
+Gbarpolu
+Grand Bassa
+Grand Cape Mount
+Grand Gedeh
+Grand Kru
+Lofa
+Margibi
+Maryland
+Montserrado
+Nimba
+Rivercess
+River Gee
+Sinoe
+
+Bomi
+Bong
+Gbarpolu
+Grand Bassa
+Grand Cape Mount
+Grand Gedeh
+Grand Kru
+Lofa
+Margibi
+Maryland
+Montserrado
+Nimba
+Rivercess
+River Gee
+Sinoe
+
+var liberia_counties = {
+
+  Bomi: ["Dewoin District", "Klay District", "Mecca District", "Senjeh District"]
+  Bong: ["Fuamah District", "Jorquelleh District", "Kokoyah District", "Panta-Kpa District", "Salala District",
+                  "Sanayea District", "Suakoko District", "Zota District"]
+  Gbarpolu: ["Belleh District", "Bopolu District", "Bokomu District","Kongba District", "Gbarma District"]
+  Grand Bassa: ["District #1", "District #2", "District #3", "District #4", "Owensgrove District", "St. John River District"]
+  Grand Cape Mount: ["Commonwealth District", "Garwula District","Gola Konneh District","Porkpa District","Tewor District"]
+  Grand Gedeh: ["Gbarzon District","Konobo District","Tchien District"]
+  Grand Kru County: ["Buah District", "Lower Kru Coast District","Sasstown District","Upper Kru Coast District"]
+  Lofa County: ["Foya District", "Kolahun District", "Salayea District","Vahun District", "Voinjama District", "Zorzor District"
+  Margibi County: ["Firestone District","Gibi District","Kakata District","Mambah-Kaba District",
+  Maryland County: ["Barrobo District", "Pleebo/Sodeken District"]
+  Montserrado County: ["Careysburg District","Greater Monrovia District","Commonwealth District","St. Paul River District","Todee District"]
+  Nimba County : ["Gbehlageh District","Saclepea District","Sanniquelleh-Mahn District","Tappita District","Yarwein-Mehnsohnneh District",
+                  "Zoegeh District","]
+  River Gee County: ["Gbeapo District","Webbo District"]
+  Rivercess County: ["Morweh District",Timbo District"]
+  Sinoe County : ["Butaw District" "Dugbe River District" "Greenville District" "Jaedae Jaedepo District" "Juarzon District" "Kpayan District"
+                   "Pyneston District"]
+
+};
+
+
+<select name="datas" id="datas"></select>
+    <script>
+
+        html = "";
+        obj = {
+            "1" : "Name",
+            "2": "Age",
+            "3" : "Gender"
+        }
+        for(var key in obj) {
+            html += "<option value=" + key  + ">" +obj[key] + "</option>"
+        }
+        document.getElementById("datas").innerHTML = html;
+
+    </script>
+
+
