@@ -1,7 +1,8 @@
-<!-- This contains our configuration of nested step wizard -->
-<!-- Read documentation at https://github.com/rstaib/jquery-steps/wiki/Settings -->
 (function($) {
     $(document).ready(function() {
+
+        // This contains our configuration of nested step wizard
+        // Read documentation at https://github.com/rstaib/jquery-steps/wiki/Settings
         $("#application").steps({
             headerTag: "h1",
             bodyTag: "section",
@@ -30,6 +31,40 @@
             transitionEffect: "slideLeft",
             enableAllSteps: true
         });
+
+        // Prevent .number inputs from accepting non-numerical input
+        // This is brittle and dumb, but really it's the only way because
+        // browsers are shits.
+        $(".numeric").keydown(function(event) {
+            var allowedKeys = [
+                8,   // backspace
+                9,   // tab
+                13,  // enter
+                35,  // end
+                36,  // home
+                37,  // left arrow
+                39,  // right arrow
+                46  // delete - We don't support the del key in Opera because del == . == 46.
+            ];
+            var isAllowedKey = allowedKeys.join(",").match(new RegExp(event.which)); // IE doesn't support indexOf
+            console.log(event);
+            // Some browsers just don't raise events for control keys. Easy. e.g. Safari backspace.
+            if (!event.which || // Control keys in most browsers. e.g. Firefox tab is 0
+                (48 <= event.which && event.which <= 57) || // Always 0 through 9
+                isAllowedKey) { // Opera assigns values for control keys.
+            } else {
+                event.preventDefault();
+            }
+        });
+
+        // Section A1
+        $("#reporting_date").datepicker({ minDate: "-120D", maxDate: "+120D" });
+
+        // Section A1
+        // Section A1
+        // Section A1
+
+
     })
 })(jQuery);
 
