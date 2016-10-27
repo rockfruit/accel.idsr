@@ -1,5 +1,4 @@
-<!-- This contains our configuration of nested step wizard -->
-<!-- Read documentation at https://github.com/rstaib/jquery-steps/wiki/Settings -->
+
 (function($) {
     $(document).ready(function() {
         $("#application").steps({
@@ -11,28 +10,32 @@
         });
         $("#A").steps({
             headerTag: "h2",
-            bodyTag: "div",
+            bodyTag: "subsection",
             cssClass: "wizard",
             transitionEffect: "slideLeft",
             enableAllSteps: true
         });
         $("#B").steps({
             headerTag: "h2",
-            bodyTag: "div",
+            bodyTag: "subsection",
             cssClass: "wizard",
             transitionEffect: "slideLeft",
             enableAllSteps: true
         });
         $("#C").steps({
             headerTag: "h2",
-            bodyTag: "div",
+            bodyTag: "subsection",
             cssClass: "wizard",
             transitionEffect: "slideLeft",
             enableAllSteps: true
         });
+
+
+
+
+        
     })
 })(jQuery);
-
 
 /* read https://github.com/rstaib/jquery-steps/issues/23
 
