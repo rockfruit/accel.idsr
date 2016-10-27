@@ -1,4 +1,18 @@
 .primary_disease {
     float: left;
-    width: 33%;
+    width: 28%;
 }
+.primary_disease1 {
+    float: left;
+    width: 43%;
+    border-color: 10px blue;
+}
+.primary_disease3 {
+    float: left;
+    width: 45%;
+}
+.otherdisease {
+    float: none;
+    width: 45%;
+}
+
