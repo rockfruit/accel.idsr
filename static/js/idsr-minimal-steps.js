@@ -12,21 +12,21 @@
         });
         $("#A").steps({
             headerTag: "h2",
-            bodyTag: "div",
+            bodyTag: "subsection",
             cssClass: "wizard",
             transitionEffect: "slideLeft",
             enableAllSteps: true
         });
         $("#B").steps({
             headerTag: "h2",
-            bodyTag: "div",
+            bodyTag: "subsection",
             cssClass: "wizard",
             transitionEffect: "slideLeft",
             enableAllSteps: true
         });
         $("#C").steps({
             headerTag: "h2",
-            bodyTag: "div",
+            bodyTag: "subsection",
             cssClass: "wizard",
             transitionEffect: "slideLeft",
             enableAllSteps: true
