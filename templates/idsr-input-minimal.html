@@ -4,9 +4,9 @@
 
     <!-- JQuery and JQueryUI -->
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.1.1.min.js') }} "></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-ui.min.js') }} "></script>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery-ui.min.css') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery-ui.structure.min.css') }}"/>
+    <script type="text/javascript" src="{{ url_for('static', filename='jqueryui/jquery-ui.min.js') }} "></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='jqueryui/jquery-ui.min.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='jqueryui/jquery-ui.structure.min.css') }}"/>
 
     <!-- JQuery-Steps things -->
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.steps.js') }}"></script>
@@ -19,15 +19,6 @@
     <!-- This contains the configuration of the entire steps-form -->
     <script type="text/javascript" src="{{ url_for('static', filename='js/idsr-minimal-steps.js') }}"></script>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/diseases_format.css') }}"/>
-<script>
-    $(document).ready(function() {
-   $("#other_disease").hide();
-        $("#other").click(function () {
-            $("#other_disease").show();
-        });
-});
-
-</script>
 
     <!-- JS for each section must live in thhese files, if the JS is
          inserted directly into the HTML, the steps-wizard will remove it.  -->
