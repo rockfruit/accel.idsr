@@ -29,13 +29,10 @@
             transitionEffect: "slideLeft",
             enableAllSteps: true
         });
-        
-        $("input#other_disease").hide();
-        $("input#other").click(function () {
-            $("input#other_disease").show();
-        });
-        countiesList();
-        
+
+
+
+
         
     })
 })(jQuery);
