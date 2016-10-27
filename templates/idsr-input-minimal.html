@@ -14,11 +14,20 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}"/>
 
-    <script type="text/javascript" src="{{ url_for('static', filename='js/select.js') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/diseases_format.css') }}"/>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/select.js') }} "></script>
 
     <!-- This contains the configuration of the entire steps-form -->
     <script type="text/javascript" src="{{ url_for('static', filename='js/idsr-minimal-steps.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/diseases_format.css') }}"/>
+<script>
+    $(document).ready(function() {
+   $("#other_disease").hide();
+        $("#other").click(function () {
+            $("#other_disease").show();
+        });
+});
+
+</script>
 
     <!-- JS for each section must live in thhese files, if the JS is
          inserted directly into the HTML, the steps-wizard will remove it.  -->
@@ -31,7 +40,6 @@
 </head>
 
 <body>
-
 
 <div id="application">
 

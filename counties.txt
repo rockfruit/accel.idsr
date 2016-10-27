@@ -71,3 +71,7 @@ var liberia_counties = {
     </script>
 
 
+     $("#other_disease").hide();
+        $("#other").click(function () {
+            $("#other_disease").show();
+        });
