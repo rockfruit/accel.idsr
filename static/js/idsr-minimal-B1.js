@@ -11,5 +11,6 @@
         });
 
         $("#B1 input").checkboxradio();
+
     })
 })(jQuery);
