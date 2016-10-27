@@ -2,10 +2,12 @@
 (function($) {
     $(document).ready(function() {
 
-        $("input#other_disease").hide();
-        $("input#other").click(function () {
-            $("input#other_disease").show();
+        $("#other_disease").hide();
+        $("#other").click(function () {
+            $("#other_disease").show();
         });
+
+        $( "#B1 input" ).checkboxradio();
 
     })
 })(jQuery);
