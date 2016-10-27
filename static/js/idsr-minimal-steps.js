@@ -57,17 +57,8 @@
             }
         });
 
-        // Section A1
-        $("#reporting_date").datepicker({ minDate: "-120D", maxDate: "+120D" });
-
-        // Section A1
-        // Section A1
-        // Section A1
-
-
     })
 })(jQuery);
-
 
 /* read https://github.com/rstaib/jquery-steps/issues/23
 
