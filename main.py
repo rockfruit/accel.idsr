@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from flask import render_template
 from flask import Flask, url_for
 app = Flask(__name__)
@@ -9,3 +11,6 @@ def index():
 @app.route('/idsr-input-minimal')
 def idsr_input_minimal():
     return render_template('idsr-input-minimal.html')
+
+if __name__ == "__main__":
+    app.run()
